@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>YTTA - DRAGON NEST M</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Squad game mobile Dragon Nest M" />
+    <meta name="JRJR" content="Game" />
+    <link rel="stylesheet" href="asset/style_page.css" />
+  </head>
+
+  <body>
+    <header class="element">
+      <div class="img-depan">
+        <img src="asset/img/black_smite.png" alt="Gambar Anda" />
+      </div>
+      <button class="header-button">
+        <a href="index.html">
+          <img src="asset/img/btn_2.png" alt="Tombol Gambar"
+        /></a>
+      </button>
+      <!-- <button class="header-button" onclick="myFunction()">
+      <img src="asset/img/btn_2.png" alt="Tombol Gambar" />
+      </button> -->
+      <!-- <button class="header-button">
+        <img src="asset/img/btn_3.png" alt="Tombol Gambar" />
+      </button> -->
+    </header>
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+      function stopMusic() {
+        var audio = document.getElementById("audio");
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    </script>
+    <audio id="audio" src="asset/bgm.mp3" loop></audio>
+    <!-- END MUSIK -->
+
+    <!-- <div id="popup" class="popup2">
+      <div class="popup-content2">
+        <h2>JOURNEY SQUAD</h2>
+        <div class="containerpopu">
+          <img src="asset/img/spinner.gif" class="imgpopu" alt="Gambar" />
+        </div>
+
+        <button id="closePopup" class="my-button" value="PLAY" onclick="play()">
+          USE 1 GOLDEN APPLE
+        </button>
+      </div>
+    </div> -->
+
+    <!-- <div class="containerpage">
+      <img src="asset/img/irineloading.gif" alt="Logo" />
+    </div> -->
+
+    <div class="bg-image page0"></div>
+    <div class="bg-image page1"></div>
+
+    <!-- Stop musik -->
+    <!-- <div class="floating-button">
+      <a href="#" value="pause" onclick="stopMusic()"
+        ><img src="asset/img/btn_sound.png" alt="Tombol Gambar"
+      /></a>
+    </div> -->
+
+    <!-- <footer>Created by JRJR &copy; <span id="currentYear"></span>.</footer> -->
+
+    <!-- JAVASCRIPT -->
+    <script src="asset/js.js"></script>
+
+    <script>
+      function myFunction() {
+        // Aksi yang ingin dilakukan saat tombol gambar diklik
+        alert("SOON!");
+      }
+    </script>
+  </body>
+</html>
