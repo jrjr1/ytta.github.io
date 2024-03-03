@@ -118,31 +118,34 @@ body.loaded #loading-overlay {
 }
 
 .img1 {
-  background-image: url("img/page1.jpg");
+  background-image: url("img/Page-YTTA_01.jpg");
 }
 
 .img2 {
-  background-image: url("img/page2.jpg");
+  background-image: url("img/Page-YTTA_02.jpg");
 }
 
 .img3 {
-  background-image: url("img/page3.jpg");
+  background-image: url("img/Page-YTTA_03.jpg");
 }
 
 .img4 {
-  background-image: url("#");
+  background-image: url("img/Page-YTTA_04.jpg");
 }
 
 .img5 {
-  background-image: url("img/page5.jpg");
+  background-image: url("img/Page-YTTA_04.jpg");
 }
 
 .img6 {
-  background-image: url("img/page6.jpg");
+  background-image: url("img/Page-YTTA_05.jpg");
 }
 
 .img7 {
-  background-image: url("img/page7.jpg");
+  background-image: url("img/Page-YTTA_06.jpg");
+}
+.img8 {
+  background-image: url("img/Page-YTTA_07.jpg");
 }
 
 /* Images used team */
