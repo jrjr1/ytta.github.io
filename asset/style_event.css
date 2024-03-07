@@ -1,0 +1,594 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-family: Poppins, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+p {
+  text-align: center !important;
+  width: auto;
+  padding: 20px;
+  font-size: 16px;
+}
+
+h2 {
+  text-align: center !important;
+  width: auto;
+}
+
+/* Media query untuk tampilan desktop */
+@media only screen and (min-width: 1024px) {
+  html {
+    min-height: 250vh;
+    #toast {
+      z-index: 9990;
+      position: fixed;
+      top: 15%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #df3939;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      transition: opacity 0.3s;
+    }
+
+    #toast.show {
+      opacity: 1;
+    }
+
+    #toast.hide {
+      opacity: 0;
+    }
+    .container {
+      top: 23%;
+    }
+    /* .img4 {
+      height: 10%;
+    } */
+  }
+}
+
+/* Media query untuk tampilan tablet */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  html {
+    min-height: 300px;
+  }
+}
+
+/* Media query untuk tampilan ponsel */
+/* @media only screen and (max-width: 767px) {
+  html {
+    min-height: 250px;
+    .img4 {
+      height: 55%;
+    }
+  }
+} */
+
+body.loaded #loading-overlay {
+  display: none;
+}
+
+.text-putih-tebal {
+  text-align: center !important;
+  width: auto;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.text-putih {
+  text-align: center !important;
+  width: auto;
+  color: #ffffff;
+}
+
+/* END SPINNER */
+
+.bg-image {
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-image-btn-download {
+  /* Full height */
+  height: 10%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #7289da;
+  cursor: pointer;
+}
+
+/* Images used */
+.img-btn-download {
+  background-image: url("img/btn_download.png");
+}
+
+.img1 {
+  background-image: url("img/Page-YTTA-Event_01.jpg");
+}
+
+.img2 {
+  background-image: url("img/Page-YTTA-Event_02.jpg");
+}
+
+.img3 {
+  background-image: url("img/Page-YTTA-Event_03.jpg");
+}
+
+.img4 {
+  background-image: url("img/Page-YTTA-Event_04.jpg");
+}
+
+.img5 {
+  background-image: url("img/Page-YTTA-Event_05.jpg");
+}
+
+.img6 {
+  background-image: url("img/Page-YTTA-Event_06.jpg");
+}
+
+.img7 {
+  background-image: url("img/Page-YTTA-Event_07.jpg");
+}
+.img8 {
+  background-image: url("img/Page-YTTA-Event_08.jpg");
+}
+.img9 {
+  background-image: url("img/Page-YTTA-Event_09.jpg");
+}
+
+/* Images used team */
+.team1 {
+  background-image: url("img/teampage1.jpg");
+}
+.team2 {
+  background-image: url("img/teampage2.jpg");
+}
+.team3 {
+  background-image: url("img/teampage3.jpg");
+}
+.team4 {
+  background-image: url("img/teampage4.jpg");
+}
+.team5 {
+  background-image: url("img/teampage5.jpg");
+}
+.team6 {
+  background-image: url("img/teampage6.jpg");
+}
+.team7 {
+  background-image: url("img/teampage0.jpg");
+}
+.team8 {
+  background-image: url("img/teamfooter.jpg");
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  font-size: 40px;
+  border: 7px solid #f1f1f1;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.containerjurney {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  top: 38%;
+  /* text-align: center; */
+  width: 470px;
+  /* membuat gambar tidak ke samping */
+  overflow: hidden;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn_download {
+  position: absolute;
+  top: 101%;
+  /* top: 810px; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.containerpopu {
+  align-items: center;
+  justify-content: center;
+}
+
+.containerpopu img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 9999;
+}
+
+.popup2 {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 9999;
+}
+
+.popup-content {
+  background-color: #ffffff00;
+  color: white;
+  width: 550px;
+  max-width: 100%;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.popup-content2 {
+  /* background-color: rgba(255, 255, 255, 0.900); */
+  color: rgb(0, 0, 0);
+  width: 550px;
+  max-width: 80%;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+button {
+  margin-top: 10px;
+}
+
+.my-button {
+  background-color: #db3a3a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px;
+}
+
+.my-button:hover {
+  background-color: #922323;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* OLD HEADER START */
+/* header {
+  background-image: url("img/header_bg.png");
+  background-size: cover;
+  background-position: center;
+  padding: 10px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+}
+
+.header-button {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 0px;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.header-button:hover {
+  background-image: url("img/btn_hover.png");
+  background-size: cover;
+  background-position: center;
+  background-color: #ffffff00;
+}
+
+.header-button {
+  background-color: transparent;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+}
+
+.header-button img {
+  width: 130px;
+  height: 40px;
+} */
+/* OLD HEADER END */
+
+/* Menggunakan background-image untuk header */
+header {
+  background-image: url("../asset/img/header_bg.png"); /* Ganti dengan path gambar Anda */
+  background-size: cover;
+  background-position: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+  position: fixed; /* Tetapkan posisi tetap */
+  width: 100%; /* Lebar header menjadi 100% dari layar */
+  top: 0; /* Header akan tetap di bagian atas */
+  z-index: 1000; /* Tetapkan z-index untuk memastikan header berada di atas konten lainnya */
+}
+
+.content {
+  padding-top: 40px; /* Berikan padding atas untuk mencegah konten Anda tertutup oleh header yang tetap */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* Hapus warna hitam dengan transparansi */
+  padding: 3px 35px;
+}
+
+.brand-logo {
+  padding: 0px 20px;
+  height: 50px; /* Atur tinggi gambar sesuai kebutuhan Anda */
+  width: auto; /* Atur lebar gambar sesuai kebutuhan Anda */
+}
+
+.menu-toggle {
+  display: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+    display: none;
+    flex-direction: column;
+    background-color: rgb(39, 39, 39); /* Transparansi pada menu dropdown */
+    padding: 10px 20px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-active {
+    display: flex;
+  }
+}
+
+.element {
+  z-index: 9999;
+}
+
+.other-element {
+  position: relative;
+  background-color: #f2f2f2;
+  padding: 20px;
+  text-align: center;
+}
+
+.fr-red {
+  font-size: 13px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #085cdb;
+  padding: 7px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.fr-grey {
+  font-size: 13px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #37383a;
+  padding: 7px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.fr-pink {
+  font-size: 13px;
+  border-radius: 5px;
+  color: #ffffff;
+  background-color: #db3a98;
+  padding: 7px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  /* background-color: #f44336; */
+  /* color: white;
+  padding: 15px 25px;
+  border-radius: 0px;
+  font-size: 1px; */
+  text-align: center;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26); */
+  transition: all 0.3s ease-in-out;
+}
+
+.floating-button a {
+  color: white;
+  text-decoration: none;
+}
+
+.floating-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.img-depan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5vh;
+  width: 5vh;
+  position: absolute;
+  z-index: 99;
+}
+
+.img-depan2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 8vh;
+  width: 8.5vh;
+  position: absolute;
+  z-index: 99;
+}
+
+.gambaranimasi2 {
+  text-align: center !important;
+  width: auto;
+  animation: zoom 3s infinite alternate;
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.gambaranimasi1 {
+  text-align: center !important;
+  width: auto;
+  animation: spin 2s linear infinite alternate;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(-3deg);
+  }
+  100% {
+    transform: rotate(3deg);
+  }
+}
+
+.slider {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+  border-style: dotted;
+  border-radius: 5%;
+}
+
+.slidertombol {
+  position: relative;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slider img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slider img.active {
+  opacity: 1;
+}
+
+.slider-controls {
+  position: absolute;
+  top: 95%;
+  left: 33%;
+  transform: translateY(-50%);
+}
+
+.slider-controls button {
+  background-color: transparent;
+  font-weight: 600;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+  cursor: pointer;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>YTTA - DRAGON NEST M</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Guild Game Dragon Nest M Indonesia" />
+    <meta name="JRJR" content="Game" />
+    <link rel="stylesheet" href="asset/style_event.css" />
+    <!-- Hapus ini jika ingin menghapus efek salju -->
+    <link rel="stylesheet" href="asset/style_winter.css" />
+  </head>
+
+  <body class="content">
+    <!-- SALJU EFEK -->
+    <div class="snowfall" id="snowfall-container"></div>
+
+    <header>
+      <div class="img-depan2">
+        <img src="asset/img/img_headermini.png" alt="Logo Event" />
+      </div>
+      <nav class="navbar">
+        <a href="https://discord.gg/ep5EEMXKgX"
+          ><img src="asset/img/btn_dsc.png" alt="Logo" class="brand-logo"
+        /></a>
+        <div class="menu-toggle">&#9776;</div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery/index.html">Gallery</a></li>
+          <li><a href="soon.html">Journey</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+      function stopMusic() {
+        var audio = document.getElementById("audio");
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    </script>
+
+    <audio id="audio" src="asset/bgm_event_ramadhan.mp3" loop></audio>
+    <!-- END MUSIK -->
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <h2>YTTA GUILD</h2>
+        <div class="containerpopu gambaranimasi1">
+          <img src="asset/img/logosquad.png" class="imgpopu" alt="Gambar" />
+        </div>
+
+        <button
+          id="closePopup"
+          class="my-button"
+          value="PLAY"
+          onclick="play(); showToast();"
+        >
+          RAMADHAN KAREEM
+        </button>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- <img src="asset/img/logo.png" alt="Logo" /> -->
+    </div>
+
+    <div class="bg-image img1"></div>
+    <div class="bg-image img2"></div>
+    <div class="bg-image img3"></div>
+    <!-- TULISAN SQUAD DI TENGAH FIXED -->
+    <!-- <div class="bg-text">SQUAD GOBLOCK</div> -->
+
+    <!-- Stop musik -->
+    <div class="floating-button">
+      <a href="#" value="pause" onclick="stopMusic()"
+        ><img src="asset/img/btn_sound.png" alt="Tombol Gambar"
+      /></a>
+    </div>
+
+    <footer>Created by JRJR &copy; <span id="currentYear"></span>.</footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="asset/js.js"></script>
+
+    <script>
+      function myFunction() {
+        // Aksi yang ingin dilakukan saat tombol gambar diklik
+        alert("SOON!");
+      }
+    </script>
+  </body>
+</html>
