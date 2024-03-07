@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>YTTA - DRAGON NEST M</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Squad game mobile Dragon Nest M" />
+    <meta name="JRJR" content="Game" />
+    <link rel="stylesheet" href="asset/style_journey.css" />
+  </head>
+
+  <body>
+    <header class="element">
+      <div class="img-depan">
+        <img src="asset/img/img_headermini.png" alt="Logo Event" />
+      </div>
+      <button class="header-button">
+        <a href="index.html">
+          <img src="asset/img/btn_2.png" alt="Tombol Gambar"
+        /></a>
+      </button>
+    </header>
+    <script>
+      function play() {
+        var audio = document.getElementById("audio");
+        audio.play();
+      }
+      function stopMusic() {
+        var audio = document.getElementById("audio");
+        audio.pause();
+        audio.currentTime = 0;
+      }
+    </script>
+    <audio id="audio" src="asset/bgm2.mp3" loop></audio>
+    <!-- END MUSIK -->
+
+    <div id="popup" class="popup2">
+      <div class="popup-content2">
+        <h2>JOURNEY</h2>
+        <div class="containerpopu">
+          <img src="asset/img/spinner.gif" class="imgpopu" alt="Gambar" />
+        </div>
+
+        <button id="closePopup" class="my-button" value="PLAY" onclick="play()">
+          USE 1 GOLDEN APPLE
+        </button>
+      </div>
+    </div>
+
+    <div class="containerjurney">
+      <img src="asset/img/irineloading.gif" alt="Logo" />
+    </div>
+
+    <div class="bg-image jurney0"></div>
+    <div class="bg-image jurney1"></div>
+    <!-- <div class="bg-image jurney2"></div> -->
+    <!-- <div class="bg-image jurney3"></div> -->
+    <!-- <div class="bg-image jurney4"></div>
+    <div class="bg-image jurney5"></div>
+    <div class="bg-image jurney6"></div> -->
+    <!-- <div class="bg-image jurney6"></div> -->
+
+    <!-- TULISAN SQUAD DI TENGAH FIXED -->
+    <!-- <div class="bg-text">SQUAD GOBLOCK</div> -->
+
+    <!-- Stop musik -->
+    <div class="floating-button">
+      <a href="#" value="pause" onclick="stopMusic()"
+        ><img src="asset/img/btn_sound.png" alt="Tombol Gambar"
+      /></a>
+    </div>
+
+    <footer>Created by JRJR &copy; <span id="currentYear"></span>.</footer>
+
+    <!-- JAVASCRIPT -->
+    <!-- <script src="asset/js.js"></script> -->
+
+    <script>
+      // POPUP
+      document.addEventListener("DOMContentLoaded", function () {
+        document.getElementById("popup").style.display = "block";
+      });
+
+      document
+        .getElementById("closePopup")
+        .addEventListener("click", function () {
+          document.getElementById("popup").style.display = "none";
+        });
+
+      // SPINNER
+      window.addEventListener("load", function () {
+        document.body.classList.add("loaded");
+      });
+
+      // TAHUN OTOMATIS
+      document.getElementById("currentYear").innerHTML =
+        new Date().getFullYear();
+
+      function showToast() {
+        var toast = document.getElementById("toast");
+        toast.classList.remove("hide");
+        toast.classList.add("show");
+
+        setTimeout(function () {
+          toast.classList.remove("show");
+          toast.classList.add("hide");
+        }, 7000); // Durasi tampilan toast dalam milidetik (misalnya, 3000ms untuk 3 detik)
+      }
+
+      // SALJU
+      document.addEventListener("DOMContentLoaded", function () {
+        const container = document.getElementById("snowfall-container");
+
+        for (let i = 0; i < 100; i++) {
+          createSnowflake();
+        }
+
+        function createSnowflake() {
+          const snowflake = document.createElement("div");
+          snowflake.classList.add("snowflake");
+          snowflake.style.left = `${Math.random() * 100}vw`; // vw untuk posisi horizontal di seluruh lebar layar
+          snowflake.style.animationDuration = `${Math.random() * 6 + 5}s`; // Durasi animasi acak antara 2 hingga 5 detik
+          container.appendChild(snowflake);
+        }
+      });
+    </script>
+  </body>
+</html>

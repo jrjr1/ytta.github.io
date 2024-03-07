@@ -1,3 +1,11 @@
+// Navbar Header
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("nav-active");
+});
+
 // POPUP
 document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("popup").style.display = "block";
@@ -27,18 +35,18 @@ function showToast() {
 }
 
 // SALJU
-  document.addEventListener("DOMContentLoaded", function() {
-const container = document.getElementById("snowfall-container");
+document.addEventListener("DOMContentLoaded", function () {
+  const container = document.getElementById("snowfall-container");
 
-for (let i = 0; i < 100; i++) {
-  createSnowflake();
-}
+  for (let i = 0; i < 100; i++) {
+    createSnowflake();
+  }
 
-function createSnowflake() {
-  const snowflake = document.createElement("div");
-  snowflake.classList.add("snowflake");
-  snowflake.style.left = `${Math.random() * 100}vw`; // vw untuk posisi horizontal di seluruh lebar layar
-  snowflake.style.animationDuration = `${Math.random() * 6 + 5}s`; // Durasi animasi acak antara 2 hingga 5 detik
-  container.appendChild(snowflake);
-}
+  function createSnowflake() {
+    const snowflake = document.createElement("div");
+    snowflake.classList.add("snowflake");
+    snowflake.style.left = `${Math.random() * 100}vw`; // vw untuk posisi horizontal di seluruh lebar layar
+    snowflake.style.animationDuration = `${Math.random() * 6 + 5}s`; // Durasi animasi acak antara 2 hingga 5 detik
+    container.appendChild(snowflake);
+  }
 });
