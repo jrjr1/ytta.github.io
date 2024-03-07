@@ -48,9 +48,9 @@ h2 {
     .container {
       top: 23%;
     }
-    .img4 {
+    /* .img4 {
       height: 10%;
-    }
+    } */
   }
 }
 
@@ -62,14 +62,14 @@ h2 {
 }
 
 /* Media query untuk tampilan ponsel */
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
   html {
     min-height: 250px;
     .img4 {
       height: 55%;
     }
   }
-}
+} */
 
 body.loaded #loading-overlay {
   display: none;
@@ -134,21 +134,21 @@ body.loaded #loading-overlay {
 }
 
 .img5 {
-  background-image: url("img/Page-YTTA_04.jpg");
-}
-
-.img6 {
   background-image: url("img/Page-YTTA_05.jpg");
 }
 
-.img7 {
+.img6 {
   background-image: url("img/Page-YTTA_06.jpg");
 }
-.img8 {
+
+.img7 {
   background-image: url("img/Page-YTTA_07.jpg");
 }
-.img9 {
+.img8 {
   background-image: url("img/Page-YTTA_08.jpg");
+}
+.img9 {
+  background-image: url("img/Page-YTTA_09.jpg");
 }
 
 /* Images used team */
