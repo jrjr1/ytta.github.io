@@ -147,6 +147,9 @@ body.loaded #loading-overlay {
 .img8 {
   background-image: url("img/Page-YTTA_07.jpg");
 }
+.img9 {
+  background-image: url("img/Page-YTTA_08.jpg");
+}
 
 /* Images used team */
 .team1 {
@@ -510,7 +513,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 8vh;
-  width: 9vh;
+  width: 8.5vh;
   position: absolute;
   z-index: 99;
 }
